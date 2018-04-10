@@ -1,0 +1,59 @@
+/*csslint ids: false, order-alphabetical: false */
+.cmvDisclaimerWidget {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.cmvDisclaimerWidget .disclaimerMessageContainer {
+    flex: 1;
+	padding: 0;
+}
+
+.cmvDisclaimerWidget .disclaimerButtonContainer {
+    left: 0;
+    right: 0;
+    padding: 8px 20px 0 20px;
+    text-align: center;
+}
+
+.cmvDisclaimerWidget .acceptDisclaimerIcon {
+    color: #009900;
+}
+
+.cmvDisclaimerWidget .acceptDisclaimerButton {
+    float: left;
+}
+
+.cmvDisclaimerWidget .declineDisclaimerIcon {
+    color: #CC0000;
+}
+
+.cmvDisclaimerWidget .declineDisclaimerButton {
+    float: right;
+}
+
+.floating-disclaimer .dijitDialogCloseIcon {
+    display: none;
+}
+
+#disclaimer_parent_underlay {
+    display: block;
+}
+
+.floating-disclaimer {
+    display: flex;
+    flex-direction: column;
+}
+
+.floating-disclaimer .dijitDialogPaneContent {
+    flex: 1;
+}
+
+@media screen and (max-width: 400px) {
+    .floating-disclaimer {
+        min-height: 55%;
+        min-width: 90%;
+    }
+}
